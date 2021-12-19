@@ -15,3 +15,17 @@ Route::get('/', 'IndexController@home');
 
 Route::get('/form', 'FormController@biodata');
 Route::post('/kirim', 'FormController@kirim');
+
+/*
+Route::get('/master', function(){
+    return view('layout.master');
+});
+*/
+
+Route::get('/data-table', function(){
+    return view('table.data-table');
+});
+
+Route::get('/table', function(){
+    return view('table.table');
+});

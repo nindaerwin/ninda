@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Halaman Biodata</h1>
+    @extends('layout.master')
+
+    @section('judul')
+        <h1>Isi biodata disini</h1>
+    @endsection
+    
+    @section('content')
     <form action="/kirim" method="post">
         @csrf
         <label>First name: </label><Br><br>
@@ -33,5 +30,5 @@
             <textarea name="bio" id="" cols="30" rows="10"></textarea><br>
         <input type="submit" value="kirim">
     </form>
-</body>
-</html>
+    
+    @endsection
